@@ -1,6 +1,6 @@
-import { ProductPrice } from "../models"
+import { ProductPriceInterface } from "../models"
 
-const CardPrice = ({icon, price}:ProductPrice) => {
+const ProductPrice = ({icon, price}:ProductPriceInterface) => {
     return (
         <div className="flex items-center gap-2 ">
             <img src={icon} alt="eth icon" />
@@ -8,4 +8,4 @@ const CardPrice = ({icon, price}:ProductPrice) => {
         </div>
     )
 }
-export default CardPrice
+export default ProductPrice

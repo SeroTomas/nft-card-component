@@ -1,10 +1,13 @@
+import { CardInfo, UserInfo } from "@/components"
 import { CardInterface } from "../models"
+import CardImage from "./CardImage"
 
-const Card = ({ image, producInfo, productUser }: CardInterface) => {
+const Card = ({ productImage, productInfo, user }: CardInterface) => {
     return (
-        <div className="flex flex-col p-6">
-            <img src={image} alt="Product NFT" className="rounded-xl" />
-
+        <div className="flex flex-col p-6 w-[360px]">
+            <CardImage {...productImage} />
+            <CardInfo {...productInfo} />
+            <UserInfo {...user} />
         </div>
     )
 }

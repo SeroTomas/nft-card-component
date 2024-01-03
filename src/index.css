@@ -7,3 +7,9 @@
 *{
     font-family: 'Outfit', sans-serif;
 }
+
+
+.transicion {
+    transition: opacity 0.3s ease;
+    /* Agrega una transición suave */
+}

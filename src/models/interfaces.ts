@@ -1,27 +1,32 @@
-export interface CardInterface{
-    image: string
-    productInfo: CardInfo
-    user: UserInfo
+export interface CardInterface {
+    productImage: ProductImageInterface
+    productInfo: CardInfoInterface
+    user: UserInfoInterface
 }
 
-export interface CardInfo{
+export interface CardInfoInterface {
     title: string
     description: string
-    productPrice: ProductPrice
-    productDate: ProductDate
+    productPrice: ProductPriceInterface
+    productDate: ProductDateInterface
 }
 
-export interface UserInfo{
+export interface ProductImageInterface {
+    image: string
+    icon: string
+}
+
+export interface UserInfoInterface {
     avatar: string
     userName: string
 }
 
-export interface ProductPrice{
+export interface ProductPriceInterface {
     icon: string
     price: string
 }
 
-export interface ProductDate{
+export interface ProductDateInterface {
     icon: string
     date: string
 }

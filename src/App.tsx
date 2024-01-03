@@ -3,10 +3,13 @@ import { Card } from './components'
 import { CardInterface } from './models'
 
 const card: CardInterface = {
-  image: "images/image-equilibrium.jpg",
+  productImage: {
+    image: "images/image-equilibrium.jpg",
+    icon: "images/icon-view.svg"
+  },
   productInfo: {
     title: "Equilibrium #3429",
-    description:"Our Equilibrium collection promotes balance and calm.",
+    description: "Our Equilibrium collection promotes balance and calm.",
     productPrice: {
       icon: "images/icon-ethereum.svg",
       price: "0.041"
@@ -26,7 +29,7 @@ function App() {
 
   return (
     <main className='h-screen bg-c-blueMain grid place-items-center'>
-      <Card {...card}/>
+      <Card {...card} />
     </main>
   )
 }

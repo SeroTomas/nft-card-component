@@ -1,13 +1,16 @@
-import { CardInfo } from "../models"
+
+import { ProductDate, ProductPrice } from "@/components"
+import { CardInfoInterface } from "@/models"
 
 
-const CardInfo = ({ title, description, productDate, productPrice}: CardInfo) => {
+const CardInfo = ({ title, description, productDate, productPrice }: CardInfoInterface) => {
     return (
         <div>
             <h2>{title}</h2>
             <p>{description}</p>
             <div>
-                
+                <ProductPrice {...productPrice} />
+                <ProductDate {...productDate} />
             </div>
         </div>
     )
