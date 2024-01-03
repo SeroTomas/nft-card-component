@@ -1,6 +1,5 @@
-import { CardInfo, UserInfo } from "@/components"
+import { CardInfo, UserInfo, CardImage } from "@/components"
 import { CardInterface } from "../models"
-import CardImage from "./CardImage"
 
 const Card = ({ productImage, productInfo, user }: CardInterface) => {
     return (
